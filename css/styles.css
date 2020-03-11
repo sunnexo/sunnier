@@ -30,3 +30,14 @@ body{
     color: white;
     background-color: rgb(26, 26, 26);
 }
+
+.grid-footer{
+    height: 2%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .grid-container{
+        grid-template-columns: 5% 90% 5%;
+    }
+}
