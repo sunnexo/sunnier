@@ -74,10 +74,12 @@ body{
 
 @media screen and (max-width: 1200px) {
     .grid-container{
-        grid-template-columns: 0% 100% 0%;
+        grid-template-columns: 10% 80% 10%;
     }
+}
 
-    .grid-main{
-        padding: 6%;
+@media screen and (max-width: 800px) {
+    .grid-container{
+        grid-template-columns: 0% 100% 0%;
     }
 }
