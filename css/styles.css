@@ -1,6 +1,6 @@
 :root{
     font-size: 20px;
-    font-family: 'Consolas';
+    font-family: 'larabiefont rg';
     --bg-primary: rgb(36, 36, 36);
     --bg-secondary: rgb(20, 20, 20);
     --text-primary: rgb(250, 250, 250);
@@ -76,7 +76,46 @@ body{
     height: 2%;
     width: 100%;
     max-width: 100%;
+    padding: 0.5rem;
+    color: var(--text-secondary);
 }
+
+.glow {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+    z-index: -1;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #009de6, 0 0 30px #00b8e6, 0 0 40px #009de6, 0 0 50px #0092e6, 0 0 60px #00b8e6;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #4d68ff, 0 0 30px #4d8bff, 0 0 40px #4dcdff, 0 0 50px #4dafff, 0 0 60px #4db8ff, 0 0 70px #4dcdff;
+    }
+  }
+
+.grid-main:hover .glow {
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    opacity: 0.8;
+    
+    @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #009de6, 0 0 30px #00b8e6, 0 0 40px #009de6, 0 0 40px #0092e6, 0 0 40px #00b8e6;
+        }
+        to {
+          text-shadow: 0 0 10px #fff, 0 0 20px #4d68ff, 0 0 30px #4d8bff, 0 0 40px #4dcdff, 0 0 40px #4dafff, 0 0 40px #4db8ff, 0 0 40px #4dcdff;
+        }
+      }
+}
+
+
+
 
 
 @media screen and (max-width: 1200px) {
