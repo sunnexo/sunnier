@@ -1,8 +1,8 @@
 #menu-toggle{
     display: block;
     position: fixed;
-    top: 1.7rem;
-    left: 1.7rem;
+    top: 1.4rem;
+    left: 1.4rem;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -75,8 +75,8 @@
     padding-left: 2.3rem;
     opacity: 0.95;
     
-    background-color: rgb(161, 4, 78);
-    
+    background: rgb(0,68,87);
+    background: linear-gradient(97deg, rgba(0,68,87,1) 1%, rgba(0,76,101,1) 100%); 
     list-style-type: none;
     
     transform-origin: 0% 0%;
@@ -87,6 +87,7 @@
 
 #menu li{
   padding-top: 1rem;
+  padding-left: 0.5rem;
   font-size: 22px;
   color: var(--text-primary);
 }
@@ -97,8 +98,8 @@
 
 @media screen and (max-width: 1200px) {
     #menu-toggle{
-        top: 1rem;
-        left: 1rem;
+        top: 0.97rem;
+        left: 0.97rem;
     }
 }
 
@@ -108,8 +109,10 @@
         left: 0.7rem;
     }
 
-    #menu-toggle span{
-        
+    #menu li{
+        font-size: 18px;
+        padding: 0.2rem;
+        padding-left: 0.7rem;
     }
 
     /* .grid-container{
