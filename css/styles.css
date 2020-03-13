@@ -7,7 +7,7 @@
     --text-secondary: rgb(207, 207, 207);
 }
 
-@fontface{
+@font-face{
     font-family: 'larabiefont rg';
     src: url(larabiefont rg.ttf);
 
