@@ -45,7 +45,7 @@ body{
 }
 @keyframes floating {
     from { transform: translate(0,  0px); }
-    70%  { transform: translate(0, 3px); }
+    60%  { transform: translate(0, 3px); }
     to   { transform: translate(0, 0px); }    
 }
 
