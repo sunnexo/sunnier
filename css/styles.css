@@ -1,7 +1,7 @@
-/* @font-face{
+@font-face{
     font-family: 'larabiefontrg';
     src: url(fonts/larabiefont_rg.ttf);
-} */
+}
 
 :root{
     font-size: 18px;
@@ -32,7 +32,6 @@ body{
     opacity: 0.95;
     background: rgb(0,98,124);
     background: linear-gradient(166deg, rgba(0,98,124,1) 1%, rgba(85,37,144,1) 48%, rgba(159,0,156,1) 100%); 
-
 }
 
 
@@ -113,6 +112,10 @@ body{
 
     .title-logo{
         max-height: 2.3rem;
+    }
+
+    .glow{
+        text-shadow: 0 0 6px #fff;
     }
 }
 
