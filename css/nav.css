@@ -89,7 +89,7 @@
   padding-left: 0.8rem;
   font-size: 22px;
   color: var(--text-primary);
-  transition: 0.3s;
+  transition: 0.05s;
 }
 
 #menu li:hover, #menu li:active{
