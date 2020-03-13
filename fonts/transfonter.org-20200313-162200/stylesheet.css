@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'NK57 Monospace Sc Lt';
+    src: url('NK57MonospaceScLt-Regular.woff2') format('woff2'),
+        url('NK57MonospaceScLt-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NK57 Monospace Sc Bk';
+    src: url('NK57MonospaceScBk-Regular.woff2') format('woff2'),
+        url('NK57MonospaceScBk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
