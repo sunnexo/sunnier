@@ -1,31 +1,53 @@
+.big-title{
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    color: #fff;
+    text-align: left;
+    transition: 1s;
+    z-index: -1;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
 .startmenu-container{
     display: grid;
     gap: 1rem;
 
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     padding-top: 1rem;
 }
 
 .card-image{
-    width: 50%;
+    width: 100%;
     border-radius: 0.5rem;
 }
 
+.card-info-container{
+    padding: 1.2rem;
+}
+
 .card-text-link{
-    margin: 1rem;
     height: 100%;
+    font-size: 1.2rem;
     text-decoration: none;
     color: white;
+    padding: 0;
+}
+
+.card-subtitle{
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 .card-normal{
     background-color: rgb(34, 34, 34);
-    border-radius: 0.2rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
 }
 
-.card-big{
+/* .card-big{
     grid-row: span 2 / auto;
     grid-column: span 2 / auto;
-}
+} */
