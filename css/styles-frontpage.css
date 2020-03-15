@@ -65,9 +65,9 @@ body{
     padding-top: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
     background-color: var(--bg-primary);
     color: var(--text-secondary);
-    min-height: 1200px;
     transition: 0.2s;
 }
 
