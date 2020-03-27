@@ -1,132 +1,21 @@
-#menu-toggle{
-    display: block;
-    position: fixed;
-    top: 1.4rem;
-    left: 1.4rem;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-#menu-toggle a{
+.back-button{
+    opacity: 1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
-    color: var(--text-primary);
-}
-
-#menu-toggle input{
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-  
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: black;
     cursor: pointer;
-    
-    opacity: 0;
-    z-index: 2;
-    
-    -webkit-touch-callout: none;
 }
 
-#menu-toggle span{
-    display: block;
-    width: 30px;
-    height: 2px;
-    margin-bottom: 8px;
-    position: relative;
-    
-    background: var(--text-primary);
-    
-    z-index: 1;
-    
-    transform-origin: 4px 0px;
-    transition: transform 0.5s, background 0.5s;
-}
-
-#menu-toggle span:first-child{
-    transform-origin: 0% 0%;
-}
-
-#menu-toggle span:nth-last-child(2){
-    transform-origin: 0% 100%;
-}
-
-/* Turn into cross... */
-
-#menu-toggle input:checked ~ span{
-  transform: rotate(45deg) translate(2px, 1px);
-  background: var(--text-primary);
-}
-#menu-toggle input:checked ~ span:nth-last-child(3){
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-#menu-toggle input:checked ~ span:nth-last-child(2){
-  transform: rotate(-45deg);
-}
-
-#menu{
-    position: absolute;
-    width: 12rem;
-    height: 100vh;
-    margin: -100px 0 0 -50px;
-    padding-top: 20vh;
-    padding-left: 2.3rem;
-    opacity: 0.95;
-    
-    background: rgb(0, 9, 12);
-    list-style-type: none;
-    
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    
-    transition: transform 0.5s cubic-bezier(0.8, 0.2, 0.5, 1.0);
-}
-
-#menu li{
-  padding-top: 1rem;
-  padding-left: 0.8rem;
-  font-size: 22px;
-  color: var(--text-primary);
-  transition: 0.05s;
-}
-
-#menu li:hover, #menu li:active{
-    text-shadow: 0 0 10px #fff;
-}
-
-
-
-#menu-toggle input:checked ~ ul{
-  transform: none;
-}
 
 @media screen and (max-width: 1200px) {
-    #menu-toggle{
-        top: 0.97rem;
-        left: 0.97rem;
-    }
+    
 }
 
 @media screen and (max-width: 800px) {
-    #menu-toggle{
-        top: 0.7rem;
-        left: 0.7rem;
-    }
-
-    #menu li{
-        font-size: 18px;
-        padding: 0.2rem;
-        padding-left: 0.7rem;
-    }
-
-    /* .grid-container{
-        grid-template-columns: 0% 100% 0%;
-        font-size: 16px;
-    }
-    .title{
-        font-size: 11px;
-        padding: 1px;
-    } */
+    
 }

@@ -1,7 +1,7 @@
 
 :root{
     font-size: 20px;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Abel', sans-serif;
     --bg-primary: rgb(24, 24, 24);
     --bg-secondary: rgb(20, 20, 20);
     --text-primary: rgb(250, 250, 250);
@@ -62,17 +62,25 @@ body{
 
 .grid-main{
     padding-top: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     background-color: var(--bg-primary);
     color: var(--text-secondary);
     min-height: 1200px;
     transition: 0.2s;
 }
 
+.grid-main p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .grid-bg{
     color: white;
     background-color: var(--bg-secondary);
+    padding: 1rem;
+}
+
+.grid-bg p{
+    padding:0;
 }
 
 .grid-footer{
@@ -82,9 +90,12 @@ body{
 }
 
 .title-glow {
+    /* font-family: Share Tech Mono; */
     font-size: 2.2rem;
     margin-top: 25px;
     margin-bottom: 16px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     color: #fff;
     text-align: left;
     transition: 1s;
@@ -93,9 +104,12 @@ body{
 }
 
 .title-medium {
+    /* font-family: Share Tech Mono; */
     font-size: 1.5rem;
     margin-top: 16px;
     margin-bottom: 16px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     color: #fff;
     text-align: left;
     transition: 1s;
@@ -120,6 +134,7 @@ body{
 
     .grid-main{
         background-color: var(--bg-primary);
+        font-size: 1rem;
     }
 
     .title{
@@ -133,6 +148,7 @@ body{
 
     .title-glow{
         text-shadow: 0 0 6px rgb(255, 255, 255);
+        font-size: 1.8rem;
     }
 }
 
@@ -144,8 +160,6 @@ body{
 
     .grid-main{
         padding-top: 0.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
         background-color: var(--bg-primary);
     }
     .title{
