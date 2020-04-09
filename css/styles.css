@@ -61,14 +61,20 @@ body{
 }
 
 .grid-main{
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem; */
+    padding-top: 0;
     background-color: var(--bg-primary);
     color: var(--text-secondary);
-    min-height: 1200px;
+    min-height: 1400px;
     transition: 0.2s;
 }
 
 .grid-main p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.grid-main b{
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -123,7 +129,7 @@ body{
 }
 
 .grid-main:hover .title-glow{
-    text-shadow: 0 0 7px rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 1200px) {
@@ -170,3 +176,48 @@ body{
         max-height: 1.9rem;
     }
 }
+
+
+.link-button{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: right;
+    color: rgb(16, 120, 255);
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: rgb(207, 14, 255);
+  }
+  
+  ::selection {
+    color: white;
+    background: rgb(207, 14, 255);
+  }
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0f0f0f; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(29, 29, 29); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(66, 66, 66); 
+  }
+
+  .temp-footer{
+    font-size: 0.8rem;
+    color: rgb(66, 66, 66);
+  }
